@@ -1,0 +1,120 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+
+/*Common fixes and styles*/
+body{
+    font-family: 'Open Sans',sans-serif;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col{
+    float: left;
+}
+
+/*Common lengths*/
+.half-width{
+    width: 50%;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.half-height{
+    height: 50%;
+}
+
+.full-height{
+    height: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+/* Common positions */
+.right-allignment{
+    text-align: right;
+}
+
+/*Common buttons*/
+.small-btn{
+    padding: 5px 20px;
+}
+
+.blue-btn{
+    background-color: #0061ff;
+    color: white;
+}
+
+/* Hover */
+.blue-btn:hover{
+    filter: brightness(130%);
+}
+
+header a:hover{
+    border-bottom: 2px solid black;
+}
+
+/* HEADER */
+
+/* Common Header */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+
+header nav{
+    line-height: 6vh;
+}
+
+header li *{
+    vertical-align: middle;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: auto 20px;    
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 2vh;
+}
+
+/* Logo */
+.small-logo{
+    position: relative;
+    bottom: 2px; /* height fix */
+    width: 120px;
+}
+
+/* TEST */
+/* div{
+    border: 1px solid blue;
+} */
+
+.test-box{
+    background-color: red;
+    height: 500px;
+    width: 100%;
+}
