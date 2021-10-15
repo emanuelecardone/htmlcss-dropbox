@@ -13,7 +13,11 @@
 <body>
     
     <header>    
+
+        
         <nav class="clearfix">
+
+            <!-- Left header -->
             <div class="col full-height half-width">
                 <ul class="full-height">
                     <li>
@@ -30,8 +34,10 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- Right header -->
             <div class="col full-height half-width">
-                <ul class="full-height right-allignment">
+                <ul class="full-height right-alignment">
                     <li>
                         <a href="#">Supporto</a>
                     </li>
@@ -47,28 +53,46 @@
                 </ul>
             </div>
         </nav>
+
     </header>
 
     <main>
+
+        <!-- Jumbotron -->
         <div class="jumbotron">
             <div class="jumbotron-title large-container">
                 <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
             </div>
             <div class="jumbo-content">
-            <div class="clearfix large-container">
-                <div class="col left-jumbo-col">
-                    <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
-                    <a class="btn small-btn blue-btn"href="#">Inizia la tua prova gratuita</a>
-                    <div class="small-font">Annulla in qualsiasi momento</div>
-                    <i class="fas fa-arrow-down"></i>
-                    <div class="white-box"></div>
-                </div>
-                <div class="col right-jumbo-col">
-                    <img src="img/jumbo.png" alt="Immagine nel jumbotron">
-                    <div class="white-box"></div>
+                <div class="clearfix large-container">
+                    <div class="col left-jumbo-col">
+                        <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                        <a class="btn small-btn blue-btn"href="#">Inizia la tua prova gratuita</a>
+                        <div class="small-font">Annulla in qualsiasi momento</div>
+                        <i class="fas fa-arrow-down"></i>
+                        <div class="white-box full-width"></div>
+                    </div>
+                    <div class="col right-jumbo-col">
+                        <img src="img/jumbo.png" alt="Immagine nel jumbotron">
+                    </div>
                 </div>
             </div>
-            
+        </div>
+
+        <!-- Business plan -->
+        <div class="business-plan small-container">
+            <h2>Trova il piano Dropbox Business che fa per te</h2>
+            <div class="radio-row">
+                <label class="monthly-billing">
+                    <input type="radio" checked="checked" name="billing">
+                    <span class="radio-mark left-alignment"></span>
+                    Fatturazione mensile                    
+                </label>
+                <label class="yearly-billing">
+                    <input type="radio" name="billing">
+                    <span class="radio-mark"></span>
+                    Fatturazione annuale
+                </label>
             </div>
         </div>
         

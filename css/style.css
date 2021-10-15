@@ -29,12 +29,21 @@ h1{
     /* padding-top: 80px; */
 }
 
+h2{
+    font-size: 45px;
+}
+
 .small-font{
     font-size: 14px;
 }
 
 a.btn{
     text-decoration: none;
+}
+
+.small-container{
+    width: 63%;
+    margin: auto;
 }
 
 .large-container{
@@ -64,7 +73,11 @@ img{
 }
 
 /* Common positions */
-.right-allignment{
+.left-alignment{
+    text-align: left;
+}
+
+.right-alignment{
     text-align: right;
 }
 
@@ -102,6 +115,7 @@ header{
     left: 0;
     width: 100%;
     background-color: white;
+    z-index: 10;
 }
 
 header nav{
@@ -184,22 +198,61 @@ main{
 /* Box for jumbotron image effect */
 .white-box{
     position: absolute;
-    width: 100%;
-    height: 90px;
+    height: 120px;
     bottom: 0;
     left: 0;
     background-color: white;
 }
 
+/* Business plan section */
+.business-plan{
+    margin-top: 200px;
+    height: 1000px;   
+}
+
+/* Radio boxes */
+.radio-row{
+    margin-top: 70px;
+}
+
+.yearly-billing{
+    margin-left: 15px;
+}
+
+.business-plan input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+} /* To hide default radio marks */
+
+.radio-mark{
+    border: 1px solid grey;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-left:-4px; 
+    margin-top: -4px;  /* 4 pixel inline-block fix */
+    vertical-align: middle;
+} /* Setting new radio mark */
+
+.business-plan input:checked + .radio-mark{
+    border: 5px solid #0061ff;
+} /* Changes once radio mark is checked */
+
+
+
+
 
 /* TEST */
+
 /* div{
     border: 1px solid blue;
-} */
+} 
 
 .test-box{
     background-color: red;
     height: 500px;
     width: 100%;
-}
+} */
 
