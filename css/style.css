@@ -11,6 +11,7 @@
 /*Common fixes and styles*/
 body{
     font-family: 'Open Sans',sans-serif;
+    
 }
 
 .clearfix::after{
@@ -25,7 +26,15 @@ body{
 
 h1{
     font-size: 80px;
-    padding-top: 80px;
+    /* padding-top: 80px; */
+}
+
+.small-font{
+    font-size: 14px;
+}
+
+a.btn{
+    text-decoration: none;
 }
 
 .large-container{
@@ -134,18 +143,53 @@ main{
 }
 
 /* Jumbotron */
-.jumbotron{
-
-    /* Test */
-    height: 700px;
+.jumbotron-title{
+    padding: 80px 0 40px;
 }
 
-.jumbotron-section{
+.jumbotron{
     background-color: #b4d0e7;
 }
 
+.left-jumbo-col{
+    width: 40%;
+}
 
+.right-jumbo-col{
+    width: 60%;
+}
 
+.right-jumbo-col img{
+    position: relative;
+    z-index: 2;
+}
+
+.left-jumbo-col p{
+    width: 75%;
+}
+
+.left-jumbo-col a{
+    margin: 30px 0 10px;
+}
+
+.jumbotron i{
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.jumbo-content{
+    position: relative;
+}
+
+/* Box for jumbotron image effect */
+.white-box{
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+}
 
 
 /* TEST */
@@ -158,3 +202,4 @@ main{
     height: 500px;
     width: 100%;
 }
+
