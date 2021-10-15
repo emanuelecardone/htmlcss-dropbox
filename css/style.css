@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 /* COMMON */
 
 /*Common fixes and styles*/
@@ -20,6 +21,16 @@ body{
 
 .col{
     float: left;
+}
+
+h1{
+    font-size: 80px;
+    padding-top: 80px;
+}
+
+.large-container{
+    width: 75%;
+    margin: auto;
 }
 
 /*Common lengths*/
@@ -49,8 +60,13 @@ img{
 }
 
 /*Common buttons*/
+.btn{
+    line-height: normal;
+    display: inline-block;
+}
+
 .small-btn{
-    padding: 5px 20px;
+    padding: 5px 20px; 
 }
 
 .blue-btn{
@@ -63,9 +79,10 @@ img{
     filter: brightness(130%);
 }
 
-header a:hover{
+header a:hover:not(.btn){
     border-bottom: 2px solid black;
 }
+
 
 /* HEADER */
 
@@ -107,6 +124,29 @@ header a{
     bottom: 2px; /* height fix */
     width: 120px;
 }
+
+
+/* MAIN */
+
+/* Top margin fix */
+main{
+    margin-top: 6vh;
+}
+
+/* Jumbotron */
+.jumbotron{
+
+    /* Test */
+    height: 700px;
+}
+
+.jumbotron-section{
+    background-color: #b4d0e7;
+}
+
+
+
+
 
 /* TEST */
 /* div{
