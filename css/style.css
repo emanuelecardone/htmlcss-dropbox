@@ -127,14 +127,13 @@ img{
 }
 
 /* Hover */
-.blue-btn:hover, .purchase-link:hover{
+.btn:hover, .purchase-link:hover{
     filter: brightness(130%);
 }
 
-header a:hover:not(.btn){
-    border-bottom: 2px solid black;
+header a:hover:not(.btn) + .underline-box{
+    display: block;
 }
-
 
 /* HEADER */
 
@@ -163,13 +162,19 @@ header ul{
 
 header ul li{
     display: inline-block;
-    margin: auto 20px;    
+    margin: auto 20px;
 }
 
 header a{
     text-decoration: none;
     color: black;
 }
+
+.underline-box{
+    display: none;
+    background-color: black;
+    height: 2px;
+}   /* Method to make it work in any browser */
 
 /* Logo */
 .small-logo{
