@@ -132,7 +132,7 @@ img{
 }
 
 header a:hover:not(.btn) + .underline-box{
-    display: block;
+    background-color: black;
 }
 
 /* HEADER */
@@ -171,8 +171,7 @@ header a{
 }
 
 .underline-box{
-    display: none;
-    background-color: black;
+    background-color: white;
     height: 2px;
 }   /* Method to make it work in any browser */
 
