@@ -137,7 +137,7 @@ img{
 }
 
 /* Hover */
-.btn:hover, .purchase-link:hover{
+.btn:hover, .purchase-link:hover, .teams-section a:hover{
     filter: brightness(130%);
 }
 
