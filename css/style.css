@@ -11,7 +11,6 @@
 /*Common fixes and styles*/
 body{
     font-family: 'Open Sans',sans-serif;
-    
 }
 
 .clearfix::after{
@@ -20,17 +19,30 @@ body{
     clear: both;
 }
 
+.grey-text{
+    color: #637381;
+    margin-top: 10px;
+}
+
 .col{
     float: left;
 }
 
 h1{
     font-size: 80px;
-    /* padding-top: 80px; */
 }
 
 h2{
     font-size: 45px;
+}
+
+h4{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h5{
+    font-size: 18px;
 }
 
 .small-font{
@@ -49,6 +61,11 @@ a.btn{
 .large-container{
     width: 75%;
     margin: auto;
+}
+
+.very-large-container{
+    width: 85%;
+    margin: 50px auto;
 }
 
 /*Common lengths*/
@@ -91,13 +108,17 @@ img{
     padding: 5px 20px; 
 }
 
+.large-btn{
+    padding: 8px 40px;
+}
+
 .blue-btn{
     background-color: #0061ff;
     color: white;
 }
 
 /* Hover */
-.blue-btn:hover{
+.blue-btn:hover, .purchase-link:hover{
     filter: brightness(130%);
 }
 
@@ -231,8 +252,8 @@ main{
     height: 20px;
     width: 20px;
     display: inline-block;
-    margin-left: -5px; 
-    margin-top: -3px;  /* inline-block pixel fix */
+    margin-left: -4px; 
+    margin-top: -4px;  /* inline-block 4 pixel fix */
     vertical-align: middle;
 } /* Setting new radio mark */
 
@@ -240,10 +261,85 @@ main{
     border: 5px solid #0061ff;
 } /* Changes once radio mark is checked */
 
+/* Business columns */
+.business-cols-container{
+    margin-top: 50px;
+    height: calc(100% + 200px);
+}
 
+.business-cols-container .col:nth-child(2):not(.right-list-col){
+    margin: 0 5%;
+}
 
+.business-col{
+    height: 100%;
+    width: calc((100% / 3) - (10% / 3));
+    border: 1px solid grey;
+}
 
+.business-col .business-row:first-child{
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    line-height: normal;
+}
 
+.business-col .business-row:first-child *{
+    line-height: 50px;
+}
+
+.price{
+    font-weight: bold;
+}
+
+.business-list{
+    list-style-type: none;
+}
+
+.business-list li{
+    height: 50px;
+}
+
+/* New line under pen icon fix */
+.left-list-col{
+    width: 5%;
+}
+
+.right-list-col{
+    width: 93%;
+    margin-left: 2%;
+}
+
+.trial{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.trial .btn{
+    width: 100%;
+}
+
+.purchase-link{
+    color: #0564ff;
+}
+
+.purchase{
+    margin-top: 35px;
+}
+
+.grey-bottom-border{
+    padding-bottom: 30px;
+    border-bottom: 1px solid grey;
+}
+
+.highlights{
+    margin: 80px 0 30px;
+}
+
+.fa-check{
+    color: #0061ff;
+}
 /* TEST */
 
 /* div{
@@ -253,6 +349,6 @@ main{
 .test-box{
     background-color: red;
     height: 500px;
-    width: 100%;
-}  */
+    
+}     */
 
