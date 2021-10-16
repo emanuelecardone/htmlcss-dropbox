@@ -105,16 +105,25 @@ img{
 }
 
 .small-btn{
-    padding: 5px 20px; 
+    padding: 8px 20px; 
 }
 
 .large-btn{
     padding: 8px 40px;
 }
 
+.largest-btn{
+    padding: 8px 80px;
+}
+
 .blue-btn{
     background-color: #0061ff;
     color: white;
+}
+
+.white-btn{
+    border: 1px solid black;
+    color: black;
 }
 
 /* Hover */
@@ -160,7 +169,6 @@ header ul li{
 header a{
     text-decoration: none;
     color: black;
-    padding-bottom: 2vh;
 }
 
 /* Logo */
@@ -229,7 +237,7 @@ main{
 /* Business plan section */
 .business-plan{
     margin-top: 200px;
-    height: 1000px;   
+    
 }
 
 /* Radio boxes */
@@ -258,14 +266,25 @@ main{
     vertical-align: middle;
 } /* Setting new radio mark */
 
+.business-plan .radio-mark:hover{
+    cursor: pointer;
+}
+
 .business-plan input:checked + .radio-mark{
     border: 5px solid #0061ff;
-} /* Changes once radio mark is checked */
+} /* Border once radio mark is checked */
 
 /* Business columns */
 .business-cols-container{
     margin-top: 50px;
-    height: calc(100% + 200px);
+}
+
+.business-cols-container .last-row li:last-child{
+    margin-bottom: 200px;
+}
+
+.business-cols-container .business-col:first-child .last-row li:last-child{
+    margin-bottom: 250px; /* Different bottom margin fix (first col has one less 50px li) */
 }
 
 .business-cols-container .col:nth-child(2):not(.right-list-col){
@@ -278,7 +297,7 @@ main{
     border: 1px solid grey;
 }
 
-.business-col .business-row:first-child{
+.business-col .business-row:first-child, .enterprise-container .business-row:first-child{
     height: 50px;
     width: 100%;
     border-bottom: 1px solid grey;
@@ -286,7 +305,7 @@ main{
     line-height: normal;
 }
 
-.business-col .business-row:first-child *{
+.business-col .business-row:first-child *, .enterprise-container .business-row:first-child *{
     line-height: 50px;
 }
 
@@ -341,15 +360,62 @@ main{
 .fa-check{
     color: #0061ff;
 }
+
+/* Lower business plan section */
+.enterprise-container{
+    margin-top: 60px;
+    border: 1px solid grey;
+}
+
+.enterprise-container .clearfix{
+    width: 95.5%;
+    margin: 35px auto;
+}
+
+.enterprise-left-col{
+    width: 70%;
+}
+
+.enterprise-right-col{
+    width: 30%;
+    text-align: right;
+}
+
+.enterprise-container p{
+    margin-top: 35px;
+}
+
+/* Partner section */
+.partner-section{
+    margin: 200px auto 170px;
+}
+
+.partner-left-col{
+    width: 55%;
+}
+
+.partner-right-col{
+    margin-left: 2%;
+    width: 43%;
+}
+
+.partner-right-col h4{
+    margin: 80px 0;
+}
+
+.partner-right-col p{
+    margin-bottom: 80px;
+}
+
 /* TEST */
 
 /* div{
     border: 1px solid blue;
-} 
+}  */
 
 .test-box{
     background-color: red;
     height: 500px;
     
-}     */
+}      
 
