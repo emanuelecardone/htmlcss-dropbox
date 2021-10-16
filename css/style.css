@@ -36,6 +36,11 @@ h2{
     font-size: 45px;
 }
 
+h3{
+    font-size: 38px;
+    margin: 10vh 0;
+}
+
 h4{
     font-size: 30px;
     margin-bottom: 20px;
@@ -114,7 +119,7 @@ img{
 }
 
 .largest-btn{
-    padding: 8px 80px;
+    padding: 8px 70px;
 }
 
 .blue-btn{
@@ -123,8 +128,12 @@ img{
 }
 
 .white-btn{
-    border: 1px solid black;
     color: black;
+    background-color: white;
+}
+
+.white-btn:not(.free-trial-section .btn){
+    border: 1px solid black;
 }
 
 /* Hover */
@@ -369,7 +378,7 @@ main{
     color: #0061ff;
 }
 
-/* Lower business plan section */
+/* Lowest business plan section */
 .enterprise-container{
     margin-top: 60px;
     border: 1px solid grey;
@@ -398,11 +407,11 @@ main{
     margin: 200px auto 170px;
 }
 
-.partner-left-col{
+.partner-left-col, .free-trial-left-col{
     width: 55%;
 }
 
-.partner-right-col{
+.partner-right-col, .free-trial-right-col{
     margin-left: 2%;
     width: 43%;
 }
@@ -431,6 +440,7 @@ main{
 
 .teams-section h2{
     margin-bottom: 30px;
+    width: 60%;
 }
 
 .teams-section .clearfix{
@@ -508,11 +518,54 @@ main{
     margin-bottom: 7vh;
 }
 
+/* Free trial section */
+.free-trial-section{
+    background-color: #b4d0e7;
+}
+
+.free-trial-section h2{
+    color: #61082b;
+    margin: 12vh 0;
+    width: 80%;
+}
+
+.free-trial-section .btn{
+    margin-top: 12vh;
+}
+
+/* Frequent questions section */
+.questions-left-col{
+    width: 90%;
+}
+
+.questions-right-col{
+    width: 6%;
+    margin-left: 4%;
+    text-align: right;
+}
+
+.questions-right-col i{
+    margin-right: 30%;
+}
+
+
+.small-container .questions-row:last-child{
+    margin-bottom: 10vh;
+    border-bottom: 1px solid grey;
+}
+
+.questions-row{
+    border-top: 1px solid grey;
+    line-height: 10vh;
+}
+
+/* FOOTER */
+
 /* TEST */
 
  /* div{
     border: 1px solid blue;
-}   */
+}    */
 
 .test-box{
     background-color: red;
