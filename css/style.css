@@ -453,13 +453,23 @@ main{
 }
 
 .teams-section .clearfix .col:nth-child(3){
-    width: 26%;
+    width: 30%;
     height: 50vh;
-    margin: auto 2%;
+    
 }
 
 .teams-section .teams-row{
     height: 50%;
+}
+
+.central-background-fix{
+    margin: auto 10%;
+}
+
+.grey-line{
+    background-color: #dedee0;
+    width: 10%;
+    height: 1px;
 }
 
 /* Teams section backgrounds */
@@ -515,11 +525,11 @@ main{
 
 #central-box img{
     width: 25%;
-    margin: 7vh 0 9vh;
+    margin: 7vh 0 3vh;
 }
 
 #central-box p{
-    margin-bottom: 7vh;
+    margin: 7vh 0 7vh;
 }
 
 /* Free trial section */
@@ -614,8 +624,8 @@ footer a{
 
 /* TEST */
 
-/* 
-div{
+
+/* div{
     border: 1px solid blue;
 }  
 
@@ -623,7 +633,7 @@ div{
     background-color: red;
     height: 500px;
     
-}       
-*/
+}        */
+
 
 
