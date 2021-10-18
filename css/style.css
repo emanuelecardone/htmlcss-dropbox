@@ -449,7 +449,7 @@ main{
 
 .teams-section .clearfix .col:not(:nth-child(3)){
     width: 17.5%;
-    height: 50vh;
+    height: 65vh;
 }
 
 .teams-section .clearfix .col:nth-child(3){
@@ -463,7 +463,7 @@ main{
 }
 
 .central-background-fix{
-    margin: auto 10%;
+    margin: 2vh 10%;
 }
 
 .grey-line{
@@ -529,7 +529,7 @@ main{
 }
 
 #central-box p{
-    margin: 7vh 0 7vh;
+    margin: 12vh 0 10vh;
 }
 
 /* Free trial section */
