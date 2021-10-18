@@ -155,10 +155,22 @@ header a:hover:not(.btn){
 /* Questions hover */
 .question:hover ~ .answers-row, .fa-chevron-down:hover ~ .answers-row{
     display: block;
+    animation: show-answer 0.5s ease-in;
 }
 
 .question:hover{
     cursor: default;
+}
+
+/* Answers animation */
+@keyframes show-answer{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 
