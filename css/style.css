@@ -148,18 +148,14 @@ img{
 }
 
 /* Underline hover */
-header a:hover:not(.btn){
-    border-bottom: 2px solid black;
+.header-link:hover ~ .link-underline{
+    display: block;
 }
 
 /* Questions hover */
 .question:hover ~ .answers-row, .fa-chevron-down:hover ~ .answers-row{
     display: block;
     animation: show-answer 0.5s ease-in;
-}
-
-.question:hover{
-    cursor: default;
 }
 
 /* Answers animation */
@@ -188,15 +184,25 @@ header{
     z-index: 10;
 }
 
-header ul li{
+header li{
     vertical-align: middle;
     display: inline-block;
     margin: auto 20px;
+    position: relative;
+}
+
+/* Ho messo questo span vuoto come sibling del link (invece di dare padding-bottom ad <a>) per evitare l'underline anche con l'hover sul padding di <a> */
+.link-underline{ 
+    display: none;
+    background-color: black;
+    height: 2px;
+    cursor: default;
+    position: absolute;
+    bottom: 1px;
 }
 
 header a{    
     line-height: 100px;
-    padding-bottom: calc(50px - (0.5em) - 6px);
     text-decoration: none;
     color: black;
 }
@@ -562,6 +568,10 @@ main{
 .questions-row:last-child{
     margin-bottom: 130px;
     border-bottom: 1px solid grey;
+}
+
+.question{
+    cursor: default;
 }
 
 /* Answers */
