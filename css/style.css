@@ -38,7 +38,7 @@ h2{
 
 h3{
     font-size: 38px;
-    margin: 10vh 0;
+    margin: 150px 0;
 }
 
 h4{
@@ -453,7 +453,7 @@ main{
 }
 
 .central-background-fix{
-    margin: 2vh 10%;
+    margin: 10px 10%;
 }
 
 .grey-line{
@@ -515,11 +515,11 @@ main{
 
 #central-box img{
     width: 25%;
-    margin: 7vh 0 3vh;
+    margin-top: 90px;
 }
 
 #central-box p{
-    margin: 6vh 0 9vh;
+    margin: 160px 0 120px;
 }
 
 /* Free trial section */
@@ -529,12 +529,12 @@ main{
 
 .free-trial-section h2{
     color: #61082b;
-    margin: 12vh 0;
+    margin: 160px 0;
     width: 80%;
 }
 
 .free-trial-section .btn{
-    margin-top: 12vh;
+    margin-top: 150px;
 }
 
 /* Frequent questions section */
