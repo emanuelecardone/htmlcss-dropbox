@@ -74,6 +74,10 @@ a.btn{
     margin: 50px auto;
 }
 
+ul{
+    list-style-type: none;
+}
+
 /*Common lengths*/
 .half-width{
     width: 50%;
@@ -136,14 +140,27 @@ img{
     border: 1px solid black;
 }
 
-/* Hover */
+/* HOVER */
+
+/* Button hover*/
 .btn:hover, .purchase-link:hover, .teams-section a:hover{
     filter: brightness(130%);
 }
 
+/* Underline hover */
 header a:hover:not(.btn){
     border-bottom: 2px solid black;
 }
+
+/* Questions hover */
+.question:hover ~ .answers-row, .fa-chevron-down:hover ~ .answers-row{
+    display: block;
+}
+
+.question:hover{
+    cursor: default;
+}
+
 
 /* HEADER */
 
@@ -157,10 +174,6 @@ header{
     background-color: white;
     border-bottom: 1px solid grey;
     z-index: 10;
-}
-
-header ul, footer ul{
-    list-style-type: none;
 }
 
 header ul li{
@@ -311,10 +324,6 @@ main{
 
 .price{
     font-weight: bold;
-}
-
-.business-list{
-    list-style-type: none;
 }
 
 .business-list li{
@@ -525,30 +534,39 @@ main{
     margin-top: 150px;
 }
 
-/* Frequent questions section */
-.questions-left-col{
-    width: 90%;
-}
-
-.questions-right-col{
-    width: 6%;
-    margin-left: 4%;
-    text-align: right;
-}
-
-.questions-right-col i{
-    margin-right: 30%;
+/* FAQ section */
+.questions-row i{
+    position: absolute;
+    top: calc(65px - 0.5em);
+    right: 3%;
 }
 
 .questions-row{
     border-top: 1px solid grey;
     line-height: 130px;
+    position: relative;
 }
 
 .questions-row:last-child{
     margin-bottom: 130px;
     border-bottom: 1px solid grey;
 }
+
+/* Answers */
+.answers-row{
+    width: 96%;
+    display: none;
+}
+
+.answers-row li{
+    margin-bottom: 20px;
+    line-height: normal;
+}
+
+.answers-row li:last-child{
+    margin-bottom: calc(65px - 0.5em);
+}
+
 
 /* FOOTER */
 
