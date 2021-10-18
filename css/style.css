@@ -152,18 +152,11 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    height: 100px;
     width: 100%;
     background-color: white;
     border-bottom: 1px solid grey;
     z-index: 10;
-}
-
-header nav{
-    line-height: 100px;
-}
-
-header li *{
-    vertical-align: middle;
 }
 
 header ul, footer ul{
@@ -171,26 +164,22 @@ header ul, footer ul{
 }
 
 header ul li{
+    vertical-align: middle;
     display: inline-block;
     margin: auto 20px;
 }
 
 header a{    
-    padding-bottom: calc(50px - (0.5em) - 3px);
+    line-height: 100px;
+    padding-bottom: calc(50px - (0.5em) - 6px);
     text-decoration: none;
     color: black;
-    /* line-height: 100px; */
 }
-
-.underline-box{
-    background-color: white;
-    height: 2px;
-}   /* Method to make it work in any browser */
 
 /* Logo */
 .small-logo{
     position: relative;
-    bottom: 2px; /* height fix */
+    top: 1px; /* height fix */
     width: 120px;
 }
 
@@ -450,14 +439,13 @@ main{
 }
 
 .teams-section .clearfix .col:not(:nth-child(3)){
-    width: 17.5%;
-    height: 65vh;
+    width: 380px;
+    height: 760px;
 }
 
 .teams-section .clearfix .col:nth-child(3){
-    width: 30%;
-    height: 65vh;
-    
+    width: calc(100% - 1520px);
+    height: 760px;
 }
 
 .teams-section .teams-row{
@@ -531,7 +519,7 @@ main{
 }
 
 #central-box p{
-    margin: 12vh 0 10vh;
+    margin: 6vh 0 9vh;
 }
 
 /* Free trial section */
