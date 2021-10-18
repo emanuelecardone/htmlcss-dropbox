@@ -141,8 +141,8 @@ img{
     filter: brightness(130%);
 }
 
-header a:hover:not(.btn) + .underline-box{
-    background-color: black;
+header a:hover:not(.btn){
+    border-bottom: 2px solid black;
 }
 
 /* HEADER */
@@ -159,7 +159,7 @@ header{
 }
 
 header nav{
-    line-height: 6vh;
+    line-height: 100px;
 }
 
 header li *{
@@ -175,9 +175,11 @@ header ul li{
     margin: auto 20px;
 }
 
-header a{
+header a{    
+    padding-bottom: calc(50px - (0.5em) - 3px);
     text-decoration: none;
     color: black;
+    /* line-height: 100px; */
 }
 
 .underline-box{
@@ -197,7 +199,7 @@ header a{
 
 /* Top margin fix */
 main{
-    margin-top: 6vh;
+    margin-top: 100px;
 }
 
 /* Jumbotron */
