@@ -284,28 +284,20 @@ main{
     margin-top: 50px;
 }
 
-.business-cols-container .last-row li:last-child{
-    margin-bottom: 200px;
-}
-
-.business-cols-container .business-col:first-child .last-row li:last-child{
-    margin-bottom: 250px; /* Different bottom margin fix (first col has one less 50px li) */
-}
-
-.business-cols-container .col:nth-child(2):not(.right-list-col), .operations-section .clearfix .col:nth-child(2){
+.central-business-col, .central-operations-col{
     margin: 0 5%;
 }
 
 .business-col{
-    height: 100%;
+    min-height: 1200px;
     border: 1px solid grey;
 }
 
-.business-col, .operations-section .col{
+.business-col, .operations-col{
     width: calc((100% / 3) - (10% / 3));
 }
 
-.business-col .business-row:first-child, .enterprise-container .business-row:first-child{
+.head-business-row, .head-enterprise-row{
     height: 50px;
     width: 100%;
     border-bottom: 1px solid grey;
@@ -313,7 +305,7 @@ main{
     line-height: normal;
 }
 
-.business-col .business-row:first-child *, .enterprise-container .business-row:first-child *{
+.head-business-row *, .head-enterprise-row *{
     line-height: 50px;
 }
 
@@ -369,13 +361,13 @@ main{
     color: #0061ff;
 }
 
-/* Lowest business plan section */
+/* Enterprise section */
 .enterprise-container{
     margin-top: 60px;
     border: 1px solid grey;
 }
 
-.enterprise-container .clearfix{
+.enterprise-row{
     width: 95.5%;
     margin: 35px auto;
 }
@@ -416,7 +408,7 @@ main{
 }
 
 /* Operations section */
-.operations-section .clearfix{
+.operations-row{
     margin: 80px 0 100px;
 }
 
@@ -426,7 +418,7 @@ main{
 
 /* Teams section */
 .teams-section{
-    margin-top: 300px;
+    margin-top: 280px;
 }
 
 .teams-section h2{
@@ -434,40 +426,30 @@ main{
     width: 60%;
 }
 
-.teams-section .clearfix{
+.logos-container{
     margin-top: 60px;
 }
 
-.teams-section .clearfix .col:not(:nth-child(3)){
+.img-box{
     width: 380px;
-    height: 760px;
+    height: 380px;
 }
 
-.teams-section .clearfix .col:nth-child(3){
+#central-box{
     width: calc(100% - 1520px);
     height: 760px;
-}
-
-.teams-section .teams-row{
-    height: 50%;
 }
 
 .central-background-fix{
     margin: 10px 10%;
 }
 
-.grey-line{
-    background-color: #dedee0;
-    width: 10%;
-    height: 1px;
-}
-
 /* Teams section backgrounds */
-.teams-row:not(#central-box .teams-row){
+.teams-row{
     position: relative;
 }
 
-.teams-row img:not(#central-box img){
+.teams-row img{
     position: absolute; 
     filter: invert(1);
     width: 40%;
@@ -515,11 +497,17 @@ main{
 
 #central-box img{
     width: 25%;
-    margin-top: 90px;
+    margin: 90px 0 35px;
+}
+
+.grey-line{
+    background-color: #dedee0;
+    width: 10%;
+    height: 1px;
 }
 
 #central-box p{
-    margin: 160px 0 120px;
+    margin: 130px 0;
 }
 
 /* Free trial section */
@@ -552,15 +540,14 @@ main{
     margin-right: 30%;
 }
 
-
-.small-container .questions-row:last-child{
-    margin-bottom: 130px;
-    border-bottom: 1px solid grey;
-}
-
 .questions-row{
     border-top: 1px solid grey;
     line-height: 130px;
+}
+
+.questions-row:last-child{
+    margin-bottom: 130px;
+    border-bottom: 1px solid grey;
 }
 
 /* FOOTER */
@@ -579,10 +566,10 @@ footer h5{
     margin-bottom: 35px;
 }
 
-.footer-container .large-container .footer-row:first-child{
+.footer-row{
     padding-top: 120px;
 }
-
+    
 footer .col{
     width: 20%;
 }
