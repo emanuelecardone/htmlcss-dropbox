@@ -148,8 +148,8 @@ img{
 }
 
 /* Underline hover */
-.header-link:hover ~ .link-underline{
-    display: block;
+header a:hover:not(.btn){
+    border-bottom: 2px solid black;
 }
 
 /* Questions hover */
@@ -188,21 +188,13 @@ header li{
     vertical-align: middle;
     display: inline-block;
     margin: auto 20px;
-    position: relative;
 }
 
-/* Ho messo questo span vuoto come sibling del link (invece di dare padding-bottom ad <a>) per evitare l'underline anche con l'hover sul padding di <a> */
-.link-underline{ 
-    display: none;
-    background-color: black;
-    height: 2px;
-    cursor: default;
-    position: absolute;
-    bottom: 1px;
-}
-
-header a{    
+header a{
+    /* se uso la line-height senza dare il display: inline-block; si allinea a metà altezza di <li> senza modificare l'altezza di <a> */ 
     line-height: 100px;
+    /* col padding ottengo un effetto del border-bottom più preciso, senza disallineamenti all'hover */
+    padding: calc(50px - 0.5em) 0 calc(44px - 0.5em);
     text-decoration: none;
     color: black;
 }
@@ -641,7 +633,9 @@ footer a{
 /* TEST */
 
 
-/* div{
+/* 
+
+div{
     border: 1px solid blue;
 }  
 
@@ -649,7 +643,8 @@ footer a{
     background-color: red;
     height: 500px;
     
-}        */
-
+}
+        
+*/
 
 
